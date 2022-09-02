@@ -3,7 +3,7 @@ const userRoute = require('./Routes/user.route')
 const server = express()
 const PORT = 3000
 
-
+server.use(express.json())
 server.use('/user', userRoute)
 
 

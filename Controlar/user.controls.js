@@ -16,6 +16,19 @@ module.exports.getAllUsers = async (req, res) => {
         res.status(200).send(deta)
     }
 }
+
+module.exports.saveAUsers = async (req, res) => {
+    const getDeta = await fs.readFileSync('api/api.fake.json')
+    const deta = await JSON.parse(getDeta)
+    deta.push(req.body)
+    const detaPost = await fs.writeFileSync('api/api.fake.json', JSON.stringify(deta))
+    const detap = await detaPost
+    
+
+}
+
+
+
 module.exports.deleteAUsers = async (req, res) => {
     const getDeta = await fs.readFileSync('api/api.fake.json')
     const deta = await JSON.parse(getDeta)
