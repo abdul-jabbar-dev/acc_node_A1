@@ -67,7 +67,23 @@ module.exports.deleteAUsers = async (req, res) => {
 }
 
 module.exports.bulkUpdate = async (req, res) => {
-    console.log(req.body)
+    let STdeta = await req.fsDeta
+    let STdeta2 =  STdeta
+    const bulkUpdate = req.body
+
+    bulkUpdate.forEach(uid => {
+        STdeta2.filter((ui) => {
+            if (ui.id === uid.id) {
+                const detas = req.updatedKeys.filter(e => e != 'id')
+                detas.forEach(upID => {
+                    ui[upID] = uid[upID]
+                })
+
+            }
+        })
+
+    })
+    fs.writeFileSync('api/api.fake.json', JSON.stringify(STdeta2))
 }
 
 module.exports.updateAUsers = async (req, res) => {
