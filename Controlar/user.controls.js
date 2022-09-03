@@ -66,6 +66,10 @@ module.exports.deleteAUsers = async (req, res) => {
 
 }
 
+module.exports.bulkUpdate = async (req, res) => {
+    console.log(req.body)
+}
+
 module.exports.updateAUsers = async (req, res) => {
     const readFS = await req.fsDeta
     const userNewUpdate = req.body
