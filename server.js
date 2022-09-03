@@ -9,6 +9,7 @@ server.use('/user', userRoute)
 
 
 server.get('/', (req, res) => {
+
     res.send("<h1 style='text-align:center'>HOME</h1>")
 })
 

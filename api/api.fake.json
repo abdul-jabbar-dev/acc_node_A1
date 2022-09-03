@@ -1,21 +1,5 @@
 [
     {
-        "id": 1,
-        "gender": "Female",
-        "name": "Kizzie Grishakin",
-        "contact": "01926146938",
-        "address": "435 Cordelia Pass",
-        "photoUrl": "http://dummyimage.com/129x100.png/ff4444/ffffff"
-    },
-    {
-        "id": 2,
-        "gender": "Male",
-        "name": "Nils Shoulder",
-        "contact": "01978802431",
-        "address": "07542 Glendale Parkway",
-        "photoUrl": "http://dummyimage.com/169x100.png/cc0000/ffffff"
-    },
-    {
         "id": 3,
         "gender": "Genderqueer",
         "name": "Domeniga Robertz",
@@ -25,11 +9,12 @@
     },
     {
         "id": 4,
-        "gender": "Female",
-        "name": "Marge MacGilfoyle",
+        "gender": "female",
+        "email": "dgd@gmaail.com",
+        "name": "Abdul jabbar",
         "contact": "01549931794",
         "address": "2 Brentwood Crossing",
-        "photoUrl": "http://dummyimage.com/108x100.png/cc0000/ffffff"
+        "photoUrl": " http://dummyimage.com/108x100.png/cc0000/ffffff"
     },
     {
         "id": 5,
